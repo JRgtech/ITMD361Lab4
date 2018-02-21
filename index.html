@@ -17,8 +17,12 @@
       <label>Last Name:<input type="text" name="last_name_field"></label><br>
       <label>Phone Number:<input type="text" name="phone_field"></label><br>
       <label>Email Address:<input type="text" name="email_field"></label><br>
-      <label>Gender:<input type="radio" name="gender_field" value="Male">Male<input type="radio" name="gender_field" value="Female">Female</label><br>
-      <label>Age:<select name="age_field">
+
+      <label for="gender_field">Gender:</label>
+                    <input type="radio" name="gender_field" value="Male">Male
+                    <input type="radio" name="gender_field" value="Female">Female<br>
+      <label for="age_field">Age:</label>
+          <select name="age_field">
             <option value="under 18">under 18</option>
             <option value="18-24">18-24</option>
             <option value="25-34">25-34</option>
@@ -26,12 +30,12 @@
             <option value="45-54">45-54</option>
             <option value="55-64">55-64</option>
             <option value="65 and over">65 and over</option>
-          </select></label>
+          </select>
       </fieldset>
     <h3>My Availability</h3>
       <fieldset>
       <legend>My Availability Section</legend>
-      <label>Days Available:<br>
+      <label for="available_field[]">Days Available:</label>
                      <input type="checkbox" name="available_field[]" value="Sunday">Sunday<br>
                      <input type="checkbox" name="available_field[]" value="Monday">Monday<br>
                      <input type="checkbox" name="available_field[]" value="Tuesday">Tuesday<br>
@@ -39,7 +43,7 @@
                      <input type="checkbox" name="available_field[]" value="Thursday">Thursday<br>
                      <input type="checkbox" name="available_field[]" value="Friday">Friday<br>
                      <input type="checkbox" name="available_field[]" value="Saturday">Saturday<br>
-      </label>
+
       <label>Any Comments?<br>
       <textarea name="comments_field">
       </textarea></label>
